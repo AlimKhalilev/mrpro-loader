@@ -1,0 +1,28 @@
+.info-bar {
+	// .info-bar--info
+	&--info {
+		--bg-color: rgba(14, 46, 61, 1);
+        --text-color: rgba(0, 178, 255, 1);
+	}
+
+	// .info-bar--success
+	&--success {
+		--bg-color: rgba(85, 192, 112, 1);
+        --text-color: rgba(15, 13, 18, 1);
+	}
+
+    & {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+		padding: 16px;
+		background: var(--bg-color);
+        color: var(--text-color);
+		width: 100%;
+
+        font-size: 15px;
+		font-weight: 600;
+		line-height: 18px;
+    }
+}
