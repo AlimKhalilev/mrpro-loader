@@ -1,0 +1,23 @@
+.details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 16px;
+    text-align: center;
+
+    // .details__caption
+
+    &__caption {
+        color: white;
+    }
+
+    // .details__value
+
+    &__value {
+        color: rgba(154, 154, 154, 1);
+    }
+}

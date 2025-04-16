@@ -1,0 +1,21 @@
+.warning {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: rgba(189, 77, 77, 1);
+
+    // .warning__icon
+
+    &__icon {
+        --size: 16px;
+    }
+
+    // .warning__text
+
+    &__text {
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 2%;
+    }
+}

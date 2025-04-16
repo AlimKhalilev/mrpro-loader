@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 
 @Component({
 	selector: 'ldr-details',
@@ -7,4 +7,8 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 	styleUrl: './details.component.scss',
 	changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class LdrDetailsComponent {}
+export class LdrDetailsComponent {
+    @Input() caption: string = '';
+    @Input() value: string = '';
+    @Input() valueColor: string = '';
+}

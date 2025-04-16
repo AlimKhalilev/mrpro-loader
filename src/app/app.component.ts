@@ -3,10 +3,12 @@ import { LdrButtonComponent } from './mrpro_loader/components/button/button.comp
 import { LdrInfoBarComponent } from './mrpro_loader/components/info-bar/info-bar.component';
 import { LdrToolbarButtonComponent } from './mrpro_loader/components/toolbar-button/toolbar-button.component';
 import { LdrTextboxComponent } from './mrpro_loader/components/textbox/textbox.component';
+import { LdrDetailsComponent } from './mrpro_loader/components/details/details.component';
+import { LdrWarningComponent } from './mrpro_loader/components/warning/warning.component';
 
 @Component({
 	selector: 'app-root',
-	imports: [LdrButtonComponent, LdrInfoBarComponent, LdrToolbarButtonComponent, LdrTextboxComponent],
+	imports: [LdrButtonComponent, LdrInfoBarComponent, LdrToolbarButtonComponent, LdrTextboxComponent, LdrDetailsComponent, LdrWarningComponent],
 	templateUrl: './app.component.html',
 	styleUrl: './app.component.scss',
 })
