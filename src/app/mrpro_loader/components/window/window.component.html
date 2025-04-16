@@ -1,0 +1,12 @@
+<div class="window">
+    <header class="window__header">
+        @if (showBackBtn) {
+            <ldr-toolbar-button class="window__btn" [icon]="'back'" (onClick)="toolbarBtnClick.emit('back')"></ldr-toolbar-button>
+        }
+        <ldr-toolbar-button class="window__btn" [icon]="'minimize'" (onClick)="toolbarBtnClick.emit('minimize')"></ldr-toolbar-button>
+        <ldr-toolbar-button class="window__btn" [icon]="'close'" (onClick)="toolbarBtnClick.emit('close')"></ldr-toolbar-button>
+    </header>
+    <main class="window__body">
+        <ng-content></ng-content>
+    </main>
+</div>

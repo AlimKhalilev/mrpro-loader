@@ -1,0 +1,26 @@
+.window {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    background-color: rgba(15, 13, 18, 1);
+
+    // .window__header
+
+    &__header {
+        display: flex;
+        justify-content: flex-end;
+        gap: 8px;
+    }
+
+    // .window__btn
+
+    &__btn {
+    }
+
+    // .window__body
+
+    &__body {
+        border: 1px solid rgba(36, 34, 39, 1);
+    }
+}
