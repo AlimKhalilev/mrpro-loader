@@ -4,6 +4,7 @@
     gap: 10px;
     padding: 10px;
     background-color: rgba(15, 13, 18, 1);
+    height: 100%;
 
     // .window__header
 
@@ -22,5 +23,6 @@
 
     &__body {
         border: 1px solid rgba(36, 34, 39, 1);
+        flex-grow: 1;
     }
 }
