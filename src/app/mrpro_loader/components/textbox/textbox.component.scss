@@ -1,0 +1,40 @@
+.textbox {
+    --padding-y: 12px;
+    --padding-x: 10px;
+    --line-height: 20px;
+    --input-padding-start: var(--padding-x);
+    position: relative;
+
+    &--iconStart {
+        --input-padding-start: calc(var(--padding-x) + var(--line-height) + 16px);
+    }
+
+    // .textbox__input
+
+    &__input {
+        background-color: rgba(20, 18, 23, 1);
+        border: 1px solid rgba(36, 34, 39, 1);
+        padding: var(--padding-y) var(--padding-x) var(--padding-y) var(--input-padding-start);
+        width: 100%;
+        line-height: var(--line-height);
+        font-size: 14px;
+        font-weight: 500;
+        color: rgba(154, 154, 154, 1);
+        outline: none; // плохо
+        
+        &::placeholder {
+            color: rgba(75, 75, 75, 1);
+        }
+    }
+
+    // .textbox__icon
+
+    &__icon {
+        position: absolute;
+        left: var(--padding-x);
+        top: 50%;
+        transform: translateY(-50%);
+        color: rgba(215, 215, 215, 1);
+        --size: var(--line-height);
+    }
+}

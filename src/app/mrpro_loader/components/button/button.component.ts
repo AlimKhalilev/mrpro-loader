@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output } from '@angular/core';
 import { LdrButtonPallete } from '../../interfaces/button';
 
 @Component({
@@ -9,6 +9,9 @@ import { LdrButtonPallete } from '../../interfaces/button';
 	changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class LdrButtonComponent {
+    /** Событие клика на кнопку */
+    @Output() onClick = new EventEmitter();
+
     /** Палитра кнопки */
     @Input() pallete: LdrButtonPallete = 'purple';
 

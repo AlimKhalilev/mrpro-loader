@@ -2,6 +2,7 @@
     class="button"
     [class.button--purple]="pallete === 'purple'"
     [class.button--orange]="pallete === 'orange'"
+    (click)="onClick.emit()"
 >
     <div class="button__content">
         @if (loading) {

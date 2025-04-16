@@ -1,1 +1,12 @@
-<p>textbox works!</p>
+<div class="textbox" [class.textbox--iconStart]="iconStart">
+	<input
+		class="textbox__input"
+		type="text"
+		[placeholder]="placeholder"
+		[ngModel]="model"
+		(ngModelChange)="updateModel($event)"
+	/>
+	@if (iconStart) {
+	<ldr-icon class="textbox__icon" [icon]="iconStart"></ldr-icon>
+	}
+</div>

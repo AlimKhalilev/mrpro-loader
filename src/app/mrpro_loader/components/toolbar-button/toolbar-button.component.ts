@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output } from '@angular/core';
 import { LdrIconComponent } from '../icon/icon.component';
 
 @Component({
@@ -9,6 +9,9 @@ import { LdrIconComponent } from '../icon/icon.component';
 	changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class LdrToolbarButtonComponent {
+    /** Событие клика на кнопку */
+    @Output() onClick = new EventEmitter();
+
     /** Название иконки из набора */
     @Input() icon: string = '';
 }
