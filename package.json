@@ -6,7 +6,8 @@
     "start": "ng serve --port=4281",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "build:icons": "svg-sprite-generate -d src/app/mrpro_loader/icons -o public/icon-sprite.svg"
   },
   "private": true,
   "dependencies": {
