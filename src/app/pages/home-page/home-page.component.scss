@@ -2,12 +2,12 @@
     display: grid;
     gap: 16px;
     grid-template-columns: repeat(auto-fill, 400px);
-    grid-template-rows: 500px;
     padding: 16px;
 
     // .grid__item
 
-    &__grid{
+    &__item {
+        height: 500px; 
     }
 }
 

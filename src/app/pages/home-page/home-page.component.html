@@ -1,11 +1,11 @@
 <div class="grid">
     <div class="grid__item">
-        <ldr-window>
+        <ldr-window (toolbarBtnClick)="btnClick($event)">
             <div class="activate">
                 <div class="activate__logo"><img src="./images/logo.svg" alt="Логотип"></div>
                 <div class="activate__content">
-                    <ldr-textbox [iconStart]="'key'" [placeholder]="'Press your key'"></ldr-textbox>
-                    <ldr-button [pallete]="'purple'" [text]="'Activate the key'"></ldr-button>
+                    <ldr-textbox [iconStart]="'key'" [placeholder]="'Press your key'" [(ngModel)]="text1"></ldr-textbox>
+                    <ldr-button [pallete]="'purple'" [text]="'Activate the key'" (onClick)="activate()"></ldr-button>
                 </div>
             </div>
         </ldr-window>
@@ -15,7 +15,7 @@
             <div class="activate">
                 <div class="activate__logo"><img src="./images/logo.svg" alt="Логотип"></div>
                 <div class="activate__content">
-                    <ldr-textbox [iconStart]="'key'" [placeholder]="'Press your key'"></ldr-textbox>
+                    <ldr-textbox [iconStart]="'key'" [placeholder]="'Press your key'" [(ngModel)]="text2"></ldr-textbox>
                     <ldr-button [pallete]="'purple'" [text]="'Activate the key'"></ldr-button>
                     <ldr-warning [text]="'Server connection close'"></ldr-warning>
                 </div>
@@ -23,7 +23,7 @@
         </ldr-window>
     </div>
     <div class="grid__item">
-        <ldr-window>
+        <ldr-window [showBackBtn]="true">
             <div class="account">
                 <div class="account__game">
                     <img src="./images/rust.svg" alt="Rust">
@@ -42,7 +42,7 @@
         </ldr-window>
     </div>
     <div class="grid__item">
-        <ldr-window>
+        <ldr-window [showBackBtn]="true">
             <div class="account">
                 <div class="account__game">
                     <img src="./images/rust.svg" alt="Rust">
@@ -65,7 +65,7 @@
         </ldr-window>
     </div>
     <div class="grid__item">
-        <ldr-window>
+        <ldr-window [showBackBtn]="true">
             <div class="account">
                 <div class="account__game">
                     <img src="./images/rust.svg" alt="Rust">
@@ -88,7 +88,7 @@
         </ldr-window>
     </div>
     <div class="grid__item">
-        <ldr-window>
+        <ldr-window [showBackBtn]="true">
             <div class="account">
                 <div class="account__game">
                     <img src="./images/rust.svg" alt="Rust">
@@ -111,7 +111,7 @@
         </ldr-window>
     </div>
     <div class="grid__item">
-        <ldr-window>
+        <ldr-window [showBackBtn]="true">
             <div class="account">
                 <div class="account__game">
                     <img src="./images/rust.svg" alt="Rust">
@@ -130,7 +130,7 @@
         </ldr-window>
     </div>
     <div class="grid__item">
-        <ldr-window>
+        <ldr-window [showBackBtn]="true">
             <div class="account">
                 <div class="account__game">
                     <img src="./images/rust.svg" alt="Rust">

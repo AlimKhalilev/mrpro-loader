@@ -6,6 +6,7 @@ import { LdrInfoBarComponent } from '../../mrpro_loader/components/info-bar/info
 import { LdrTextboxComponent } from '../../mrpro_loader/components/textbox/textbox.component';
 import { LdrWarningComponent } from '../../mrpro_loader/components/warning/warning.component';
 import { LdrConsoleComponent } from '../../mrpro_loader/components/console/console.component';
+import { FormsModule } from '@angular/forms';
 
 @Component({
 	selector: 'ldr-home-page',
@@ -16,10 +17,22 @@ import { LdrConsoleComponent } from '../../mrpro_loader/components/console/conso
 		LdrDetailsComponent,
 		LdrWarningComponent,
 		LdrConsoleComponent,
-		LdrWindowComponent
+		LdrWindowComponent,
+        FormsModule
 	],
 	templateUrl: './home-page.component.html',
 	styleUrl: './home-page.component.scss',
 	changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class HomePageComponent {}
+export class HomePageComponent {
+    text1: string = '';
+    text2: string = '';
+
+    btnClick(btn: string) {
+        console.log(btn);
+    }
+
+    activate() {
+        console.log('activate');
+    }
+}
