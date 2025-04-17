@@ -13,11 +13,15 @@
 
     &__caption {
         color: white;
+        font-size: inherit;
+        font-weight: inherit;
     }
 
     // .details__value
 
     &__value {
         color: rgba(154, 154, 154, 1);
+        font-size: inherit;
+        font-weight: inherit;
     }
 }
