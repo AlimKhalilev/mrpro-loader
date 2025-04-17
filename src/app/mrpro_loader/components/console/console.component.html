@@ -1,1 +1,8 @@
-<p>console works!</p>
+<div class="console">
+    <div class="console__content">
+        <ng-content></ng-content>
+    </div>
+    <button class="console__copy" (click)="copy()">
+        <ldr-icon [icon]="'copy'"></ldr-icon>
+    </button>
+</div>

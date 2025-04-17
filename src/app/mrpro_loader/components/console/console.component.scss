@@ -1,0 +1,41 @@
+.console {
+    position: relative;
+    border: 1px solid rgba(36, 34, 39, 1);
+    background-color: rgba(255, 254, 254, 0.02);
+    padding: 10px;
+
+    &:hover {
+        border-color: rgba(38, 198, 81, 1);
+
+        .console__copy {
+            color: rgba(38, 198, 81, 1);
+        }
+    }
+
+    // .console__content
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 1.4%;
+    }
+
+    // .console__copy
+
+    &__copy {
+        position: absolute;
+        background-color: unset;
+        border: none;
+        padding: 0;
+        --size: 20px;
+        color: rgba(154, 154, 154, 1);
+        cursor: pointer;
+
+        bottom: 10px;
+        right: 10px;
+    }
+}
