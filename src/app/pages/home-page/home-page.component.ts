@@ -4,7 +4,6 @@ import { LdrButtonComponent } from '../../mrpro_loader/components/button/button.
 import { LdrDetailsComponent } from '../../mrpro_loader/components/details/details.component';
 import { LdrInfoBarComponent } from '../../mrpro_loader/components/info-bar/info-bar.component';
 import { LdrTextboxComponent } from '../../mrpro_loader/components/textbox/textbox.component';
-import { LdrToolbarButtonComponent } from '../../mrpro_loader/components/toolbar-button/toolbar-button.component';
 import { LdrWarningComponent } from '../../mrpro_loader/components/warning/warning.component';
 import { LdrConsoleComponent } from '../../mrpro_loader/components/console/console.component';
 
@@ -17,7 +16,7 @@ import { LdrConsoleComponent } from '../../mrpro_loader/components/console/conso
 		LdrDetailsComponent,
 		LdrWarningComponent,
 		LdrConsoleComponent,
-		LdrWindowComponent,
+		LdrWindowComponent
 	],
 	templateUrl: './home-page.component.html',
 	styleUrl: './home-page.component.scss',
